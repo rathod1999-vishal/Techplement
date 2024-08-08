@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="<%= locals.description %>" />
+    <title><%= locals.title %></title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h2>Delete Account</h2>
+      <form action="/deleteAccount" method="post">
+        <div class="input-box">
+          <input
+            type="email"
+            placeholder="Enter your email"
+            name="email"
+            required
+          />
+        </div>
+        <div class="input-box">
+          <input
+            type="password"
+            placeholder="Enter your password"
+            name="password"
+            required
+          />
+        </div>
+
+        <div class="input-box button">
+          <input type="submit" value="Delete" />
+        </div>
+      </form>
+      <a href="/afterLogin">&larr; Back</a>
+    </div>
+  </body>
+</html>

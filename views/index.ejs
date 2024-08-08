@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="<%= locals.description %>" />
+    <title><%= locals.title %></title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h2>Registration</h2>
+      <form action="/submit" method="post">
+        <div class="input-box">
+          <input
+            type="text"
+            placeholder="Enter your name"
+            name="name"
+            required
+          />
+        </div>
+        <div class="input-box">
+          <input
+            type="email"
+            placeholder="Enter your email"
+            name="email"
+            required
+          />
+        </div>
+        <div class="input-box">
+          <input
+            type="password"
+            placeholder="Create password"
+            name="password"
+            required
+          />
+        </div>
+        <div class="input-box">
+          <input
+            type="password"
+            placeholder="Confirm password"
+            name="confirm_password"
+          />
+        </div>
+
+        <div class="input-box button">
+          <input type="submit" value="Register Now" />
+        </div>
+        <div class="text">
+          <h3>Already have an account? <a href="/login">Login Now</a></h3>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
